@@ -3,17 +3,16 @@ name: pyqvrpro
 version: 1.0.3
 slug: pyqvrpro
 description: "Pyqvrpro for connection to QVR pro to get recording"
+ports:
+  5000/tcp: 5000
+url: "https://github.com/ethannjw/pyqvrpro_addon"
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
-ports:
-  5000/tcp: 5000
-
 init: false
-
 options:
   QVRPRO_USER: "username"
   QVRPRO_PW: "password"
@@ -22,7 +21,6 @@ options:
   QVRPRO_PORT: 80
   CAMERA_GUID: ""
   VERIFY_SSL: 0
-
 schema:
   QVRPRO_USER: "str"
   QVRPRO_PW: "str"
