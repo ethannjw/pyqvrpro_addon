@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: pyqvrpro
-version: 1.0.3
+version: 1.0.4
 slug: pyqvrpro
 description: "Pyqvrpro for connection to QVR pro to get recording"
 ports:
