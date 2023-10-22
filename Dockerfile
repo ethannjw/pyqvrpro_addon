@@ -25,5 +25,5 @@ CMD ["python", "-m", "flask", "run"]
 LABEL \
     io.hass.name="pyqvrpro" \
     io.hass.description="pyqvrpro for connecting to QVR pro" \
-    io.hass.arch="arm64v8|amd64" \
+    io.hass.arch="aarch64" \
     io.hass.type="addon" \
