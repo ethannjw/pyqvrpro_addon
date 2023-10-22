@@ -36,8 +36,8 @@ def get_camera_guid(client):
     if camera_guid == '':
         app.logger.info("Getting new camera guid")
         cameras = client.list_cameras()
-        if cameras and len(cameras["user_optionss"]) > 0:
-            camera_guid = cameras["user_optionss"][0]["guid"]
+        if cameras and len(cameras["datas"]) > 0:
+            camera_guid = cameras["datas"][0]["guid"]
             app.logger.info(f"camera__guid: {camera_guid}")
             app.config["CAMERA_GUID"] = str(camera_guid)
         else:
